@@ -43,9 +43,14 @@ console.log(cars);
 //console.log(cars[1]);
 //console.log(cars[2]);
 
-var cars2 = ["A","B","C","D","E","F"];
+var cars2 = ["A2","B","C","D","E","F"];
 var text ="";
 var i;
 for(i=0; i<cars2.length; i++){
-    console.log(cars2[i]);
+    if(cars2[i] == "A"){
+        console.log('A 차량 존재');
+    }
+    
 }
+
+
