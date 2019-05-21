@@ -1,5 +1,16 @@
 var fs = require('fs');
 
+function read(callback){
+    fs.readFile('.testlong');
+    callback();
+}
+
+function read2(){
+    fs.readFile('.test');
+}
+
+read(read2());
+//callback hell
 function callbackFunc(callback){
     fs.readFile('example.txt','utf8',function(err,result){
         if(err){
