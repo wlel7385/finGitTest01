@@ -6,7 +6,7 @@ fs.readFile('./example.txt','utf8',function(err,result){
         console.error(err);
         throw err;
     }
-    else{
+    else{ 
         console.error("두번째 기능인데 시간 걸림");
         console.log(result);
     }
